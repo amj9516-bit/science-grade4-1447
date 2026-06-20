@@ -1,6 +1,377 @@
-<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>الخرائط الذهنية</title><link rel="stylesheet" href="style.css"></head><body><header><h1>🧠 الخرائط الذهنية والإنفوجرافيك</h1><h2>مراجعة بصرية سريعة</h2></header><button class="printBtn" onclick="window.print()">🖨️ طباعة / حفظ PDF</button>
-<div class="mindmap"><div class="center-title">🌍 الأرض ومواردها</div><div class="branches"><div class="branch"><h3>💎 المعادن</h3>طبيعية، صلبة، غير حية.<br>خصائصها: اللون، البريق، القساوة، المخدش.</div><div class="branch"><h3>🪨 الصخور</h3>نارية، رسوبية، متحولة.</div><div class="branch"><h3>🌋 الماجما واللابة</h3>الماجما داخل الأرض، واللابة على السطح.</div><div class="branch"><h3>💧 الماء</h3>المياه الجوفية تحت سطح الأرض، ويجب ترشيد الاستهلاك.</div></div><div class="tip">الألماس أعلى قساوة، والتلك أقل قساوة.</div></div>
-<div class="mindmap"><div class="center-title">🪐 الفضاء</div><div class="branches"><div class="branch"><h3>🌎 الأرض</h3>دورانها حول محورها يسبب الليل والنهار.</div><div class="branch"><h3>☀️ الشمس</h3>نجم يشع الضوء والحرارة.</div><div class="branch"><h3>🌙 القمر</h3>يعكس ضوء الشمس.</div><div class="branch"><h3>🌑 الكسوف والخسوف</h3>الكسوف: القمر بين الأرض والشمس.<br>الخسوف: الأرض بين الشمس والقمر.</div></div><div class="tip">أكبر كوكب: المشتري. أقرب كوكب: عطارد.</div></div>
-<div class="mindmap"><div class="center-title">⚗️ المادة</div><div class="branches"><div class="branch"><h3>📦 المادة</h3>كل ما له كتلة ويشغل حيزًا.</div><div class="branch"><h3>⚖️ القياس</h3>كتلة، حجم، وزن، كثافة.</div><div class="branch"><h3>🔄 تغيرات الحالة</h3>انصهار، تجمد، تبخر، تكاثف.</div><div class="branch"><h3>🥣 المخاليط</h3>تفصل بالترشيح أو التبخير أو المغناطيس أو الغربلة.</div></div><div class="tip">التغير الكيميائي ينتج مادة جديدة.</div></div>
-<div class="mindmap"><div class="center-title">🏃 القوى والحركة</div><div class="branches"><div class="branch"><h3>💪 القوة</h3>دفع أو سحب.</div><div class="branch"><h3>🚗 الحركة</h3>تغير موقع الجسم مع الزمن.</div><div class="branch"><h3>🛑 الاحتكاك</h3>يعيق الحركة ويزداد على السطح الخشن.</div><div class="branch"><h3>⚖️ القوى</h3>متزنة: لا تغير الحركة.<br>غير متزنة: تغير الحركة.</div></div><div class="tip">القصور الذاتي مقاومة الجسم لتغيير حالته الحركية.</div></div>
-<div class="mindmap"><div class="center-title">⚡ الطاقة</div><div class="branches"><div class="branch"><h3>🔥 الحرارة</h3>تنتقل من الأدفأ إلى الأبرد.</div><div class="branch"><h3>طرق الانتقال</h3>توصيل، حمل، إشعاع.</div><div class="branch"><h3>⚡ الكهرباء</h3>الدائرة الكهربائية مسار مغلق للتيار.</div><div class="branch"><h3>🧲 المغناطيس</h3>المتشابهة تتنافر والمختلفة تتجاذب.</div></div><div class="tip">توصيلات المنازل غالبًا على التوازي.</div></div><a class="card" href="index.html">🏠 العودة للرئيسية</a></body></html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>الخرائط الذهنية - علوم رابع</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+.mindmap{
+background:white;
+margin:25px auto;
+padding:25px;
+border-radius:20px;
+box-shadow:0 0 12px rgba(0,0,0,.15);
+max-width:950px;
+text-align:center;
+}
+
+.center-title{
+background:#1976d2;
+color:white;
+display:inline-block;
+padding:18px 30px;
+border-radius:25px;
+font-size:24px;
+font-weight:bold;
+margin-bottom:25px;
+}
+
+.branches{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:18px;
+margin-top:20px;
+}
+
+.branch{
+background:#eef4ff;
+border-right:8px solid #1976d2;
+padding:18px;
+border-radius:15px;
+text-align:right;
+font-size:18px;
+line-height:1.8;
+}
+
+.branch h3{
+margin-top:0;
+color:#0d47a1;
+}
+
+.tip{
+background:#fff9c4;
+border-right:8px solid #fbc02d;
+padding:15px;
+border-radius:15px;
+margin-top:20px;
+font-size:18px;
+text-align:right;
+}
+
+.printNote{
+background:#e8f5e9;
+padding:15px;
+border-radius:15px;
+margin:20px;
+font-size:18px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>🧠 الخرائط الذهنية والإنفوجرافيك</h1>
+<h2>علوم الصف الرابع الابتدائي - الفصل الدراسي الثاني</h2>
+</header>
+
+<div class="printNote">
+يمكن طباعة هذه الصفحة أو حفظها PDF من المتصفح: Ctrl + P ثم Save as PDF
+</div>
+
+<div class="mindmap">
+<div class="center-title">🌍 الوحدة الرابعة: الأرض ومواردها</div>
+
+<div class="branches">
+
+<div class="branch">
+<h3>💎 المعادن</h3>
+المعدن مادة طبيعية صلبة غير حية.<br>
+خصائص المعادن:<br>
+• اللون<br>
+• البريق<br>
+• القساوة<br>
+• المخدش
+</div>
+
+<div class="branch">
+<h3>🪨 الصخور</h3>
+أنواع الصخور:<br>
+• نارية: من تبريد الصهارة<br>
+• رسوبية: من الرواسب<br>
+• متحولة: من الضغط والحرارة
+</div>
+
+<div class="branch">
+<h3>🌋 الماجما واللابة</h3>
+الماجما: صخور منصهرة داخل الأرض.<br>
+اللابة: ماجما خرجت إلى سطح الأرض.
+</div>
+
+<div class="branch">
+<h3>💧 الماء</h3>
+المياه الجوفية توجد تحت سطح الأرض.<br>
+من طرق المحافظة على الماء:<br>
+• إغلاق الصنبور<br>
+• ترشيد الري<br>
+• إصلاح التسربات
+</div>
+
+</div>
+
+<div class="tip">
+⭐ تذكر: الألماس أعلى المعادن قساوة، والتلك أقلها قساوة.
+</div>
+</div>
+
+<div class="mindmap">
+<div class="center-title">🪐 الوحدة الخامسة: الفضاء</div>
+
+<div class="branches">
+
+<div class="branch">
+<h3>🌎 الأرض</h3>
+تدور الأرض حول محورها خلال 24 ساعة.<br>
+ينتج عن ذلك تعاقب الليل والنهار.
+</div>
+
+<div class="branch">
+<h3>☀️ الأرض والشمس</h3>
+تدور الأرض حول الشمس خلال سنة كاملة.<br>
+ينتج عن ذلك الفصول الأربعة بسبب ميل محور الأرض.
+</div>
+
+<div class="branch">
+<h3>🌙 القمر</h3>
+القمر لا يضيء بنفسه، بل يعكس ضوء الشمس.<br>
+يدور حول الأرض.
+</div>
+
+<div class="branch">
+<h3>🌑 الكسوف والخسوف</h3>
+كسوف الشمس: القمر بين الأرض والشمس.<br>
+خسوف القمر: الأرض بين الشمس والقمر.
+</div>
+
+<div class="branch">
+<h3>🪐 النظام الشمسي</h3>
+يتكون من الشمس وما يدور حولها.<br>
+أكبر الكواكب: المشتري.<br>
+أقرب الكواكب للشمس: عطارد.
+</div>
+
+<div class="branch">
+<h3>☄️ أجرام صغيرة</h3>
+المذنب: جليد وصخور وغبار وله ذيل.<br>
+الشهاب: يحترق في الغلاف الجوي.<br>
+النيزك: يصل إلى سطح الأرض.
+</div>
+
+</div>
+
+<div class="tip">
+⭐ ترتيب الكواكب الداخلية: عطارد، الزهرة، الأرض، المريخ.
+</div>
+</div>
+
+<div class="mindmap">
+<div class="center-title">⚗️ الوحدة السادسة: المادة</div>
+
+<div class="branches">
+
+<div class="branch">
+<h3>📦 المادة</h3>
+المادة: كل ما له كتلة ويشغل حيزًا من الفراغ.
+</div>
+
+<div class="branch">
+<h3>⚖️ القياس</h3>
+الكتلة: مقدار المادة، وتقاس بالميزان.<br>
+الحجم: الحيز الذي يشغله الجسم.<br>
+الوزن: قوة جذب الأرض للجسم.
+</div>
+
+<div class="branch">
+<h3>💧 الكثافة</h3>
+الكثافة علاقة بين الكتلة والحجم.<br>
+الجسم يطفو إذا كانت كثافته أقل من كثافة الماء.
+</div>
+
+<div class="branch">
+<h3>🧊 حالات المادة</h3>
+صلبة، سائلة، غازية.
+</div>
+
+<div class="branch">
+<h3>🔄 تغيرات الحالة</h3>
+انصهار: صلب إلى سائل.<br>
+تجمد: سائل إلى صلب.<br>
+تبخر: سائل إلى غاز.<br>
+تكاثف: غاز إلى سائل.
+</div>
+
+<div class="branch">
+<h3>🧪 التغيرات</h3>
+فيزيائي: لا ينتج مادة جديدة.<br>
+كيميائي: ينتج مادة جديدة مثل صدأ الحديد.
+</div>
+
+<div class="branch">
+<h3>🥣 المخاليط</h3>
+مادتان أو أكثر تختلطان وتحتفظ كل مادة بخصائصها.
+</div>
+
+<div class="branch">
+<h3>🔍 فصل المخاليط</h3>
+• الترشيح<br>
+• التبخير<br>
+• المغناطيس<br>
+• الغربلة
+</div>
+
+</div>
+
+<div class="tip">
+⭐ المحلول مخلوط متجانس، مثل الملح والماء.
+</div>
+</div>
+
+<div class="mindmap">
+<div class="center-title">🏃 الوحدة السابعة: القوى والحركة</div>
+
+<div class="branches">
+
+<div class="branch">
+<h3>💪 القوة</h3>
+القوة هي دفع أو سحب.<br>
+قد تغير حركة الجسم أو شكله.
+</div>
+
+<div class="branch">
+<h3>🚗 الحركة</h3>
+الحركة: تغير موقع الجسم مع الزمن.<br>
+السرعة: المسافة في زمن معين.
+</div>
+
+<div class="branch">
+<h3>➡️ السرعة المتجهة</h3>
+هي سرعة الجسم مع اتجاه حركته.
+</div>
+
+<div class="branch">
+<h3>⚡ التسارع</h3>
+تغير سرعة الجسم أو اتجاه حركته.
+</div>
+
+<div class="branch">
+<h3>🛑 الاحتكاك</h3>
+قوة تعيق حركة الأجسام المتلامسة.<br>
+يزداد على السطوح الخشنة ويقل على السطوح الملساء.
+</div>
+
+<div class="branch">
+<h3>⚖️ القوى المتزنة</h3>
+قوى متساوية ومتعاكسة لا تغير حركة الجسم.
+</div>
+
+<div class="branch">
+<h3>🚀 القوى غير المتزنة</h3>
+تغير حركة الجسم أو سرعته أو اتجاهه.
+</div>
+
+<div class="branch">
+<h3>🧲 الجاذبية</h3>
+قوة تسحب الأجسام نحو الأرض.
+</div>
+
+</div>
+
+<div class="tip">
+⭐ القصور الذاتي: مقاومة الجسم لتغيير حالته الحركية.
+</div>
+</div>
+
+<div class="mindmap">
+<div class="center-title">⚡ الوحدة الثامنة: الطاقة</div>
+
+<div class="branches">
+
+<div class="branch">
+<h3>🔥 الحرارة</h3>
+الحرارة تنتقل من الجسم الأدفأ إلى الجسم الأبرد.
+</div>
+
+<div class="branch">
+<h3>🥄 التوصيل</h3>
+انتقال الحرارة في المواد الصلبة بالتلامس.
+</div>
+
+<div class="branch">
+<h3>🌊 الحمل</h3>
+انتقال الحرارة في السوائل والغازات.
+</div>
+
+<div class="branch">
+<h3>☀️ الإشعاع</h3>
+انتقال الحرارة على شكل موجات.<br>
+حرارة الشمس تصل إلينا بالإشعاع.
+</div>
+
+<div class="branch">
+<h3>⚡ الكهرباء</h3>
+الدائرة الكهربائية مسار مغلق يمر فيه التيار.
+</div>
+
+<div class="branch">
+<h3>🔌 الدوائر</h3>
+دائرة مفتوحة: لا يمر التيار.<br>
+دائرة مغلقة: يمر التيار.<br>
+توالي: مسار واحد.<br>
+توازٍ: أكثر من مسار.
+</div>
+
+<div class="branch">
+<h3>🧲 المغناطيس</h3>
+تتركز القوة عند القطبين.<br>
+المتشابهة تتنافر، والمختلفة تتجاذب.
+</div>
+
+<div class="branch">
+<h3>🔋 الطاقة الكهربائية</h3>
+البطارية مصدر للطاقة.<br>
+المولد يحول الحركة إلى كهرباء.<br>
+المحرك يحول الكهرباء إلى حركة.
+</div>
+
+</div>
+
+<div class="tip">
+⭐ توصيلات المنازل غالبًا تكون على التوازي.
+</div>
+</div>
+
+<br>
+
+<div style="text-align:center">
+
+<button onclick="window.print()" class="submitBtn">
+🖨️ طباعة أو حفظ PDF
+</button>
+
+<br><br>
+
+<a class="card" href="index.html">
+🏠 العودة للرئيسية
+</a>
+
+</div>
+
+<br><br>
+
+</body>
+</html>
